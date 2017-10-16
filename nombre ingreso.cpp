@@ -6,10 +6,12 @@
 int main(){
       int horas, precio;
       float impuesto, neto, ingreso;
-      char nombre [10];
+      char nombre [10], apellido [20];
       
       printf("ingresa tu nombre\n");
       scanf("%s",&nombre); 
+      printf("ingresa tu apellido\n");
+      scanf("%s",&apellido); 
       
        printf("ingresa tu precio\n");
       scanf("%d",&precio); 
@@ -21,7 +23,7 @@ int main(){
       impuesto=0.25*ingreso;
       neto=ingreso-impuesto;
        
-        printf("Tu nombre es %s\n", nombre);
+        printf("Tu nombre es %s %s\n", nombre,apellido);
         printf("Tu ingreso es %f\n", ingreso);
         printf("Tu impuesto es %f\n", impuesto);
         printf("Tu sueldo neto es %f\n", neto);
